@@ -7,7 +7,7 @@
 #define freqPlan TTN_FP_EU868
     
 TheThingsNetwork ttn(loraSerial, debugSerial, freqPlan);
-    
+
 void setup() {
   loraSerial.begin(57600);
   debugSerial.begin(9600);
@@ -17,6 +17,7 @@ void setup() {
     
   debugSerial.println("-- STATUS");
   ttn.showStatus();
+
 }
 
 
